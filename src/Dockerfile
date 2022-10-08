@@ -1,4 +1,4 @@
-FROM jammy
+FROM ubuntu:jammy
 
 # Install Samba
 RUN apt-get update ; apt-get install -y samba samba-vfs-modules
