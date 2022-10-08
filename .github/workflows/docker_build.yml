@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'src/Dockerfile'
-      - 'src/entrypoint.sh'
       - 'upstream_latest_release.txt'
 
 env:
