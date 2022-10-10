@@ -3,6 +3,7 @@ MAINTAINER Chris Jones <cmsj@tenshu.net>
 
 # Install Samba
 RUN apt-get update ; apt-get install -y samba samba-vfs-modules smbclient tini ; apt-get clean
+
 # Make a place for share volume mounts to live
 RUN mkdir -p /opt/samba/
 
