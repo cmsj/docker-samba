@@ -2,8 +2,8 @@
 
 addgroup --gid 1001 smbarchive
 
-adduser --home /tmp/ --uid 1026 --gid 100 --disabled-login media
-adduser --home /tmp/ --uid 1027 --gid 1001 --disabled-login  smbarchive
+adduser --uid 1026 --gid 100 --disabled-login media
+adduser --uid 1027 --gid 1001 --disabled-login  smbarchive
 
 cp /samba.service /etc/avahi/services
 
