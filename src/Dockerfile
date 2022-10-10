@@ -7,7 +7,7 @@ RUN apt-get update ; apt-get install -y samba samba-vfs-modules smbclient tini ;
 RUN mkdir -p /opt/samba/
 
 # Copy init script
-COPY samba.sh /usr/bin/
+COPY samba.sh /usr/local/bin/
 
 EXPOSE 137/udp 138/udp 139 445
 
@@ -17,5 +17,5 @@ HEALTHCHECK --interval=60s --timeout=15s \
 # Make the config and data directories volumes
 VOLUME ["/etc/samba", "/var/lib/samba"]
 
-ENTRYPOINT ["/sbin/tini", "--", "/usr/bin/samba.sh"]
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/samba.sh"]
 
