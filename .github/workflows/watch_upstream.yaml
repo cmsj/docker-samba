@@ -17,7 +17,15 @@ jobs:
 
       - name: Capture dependency info
         run: |
-          apt-get -qq -s satisfy samba | grep ^Inst >upstream_latest_release.txt
+          apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst >upstream_latest_release.txt
+
+      - name: Fetch FROM docker image
+        run: |
+          sudo docker pull $(grep FROM src/Dockerfile | awk '{ print $2 }')
+
+      - name: Capture FROM docker image hash
+        run: |
+          docker images $(grep FROM src/Dockerfile | awk '{ print $2 }') >upstream_docker_version.txt
 
       - name: Check for modified files
         id: git-check
