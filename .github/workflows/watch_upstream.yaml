@@ -17,7 +17,7 @@ jobs:
 
       - name: Capture dependency info
         run: |
-          apt-get -qq -s satisfy xserver-xorg | grep ^Inst >upstream_latest_release.txt
+          apt-get -qq -s satisfy samba | grep ^Inst >upstream_latest_release.txt
 
       - name: Check for modified files
         id: git-check
