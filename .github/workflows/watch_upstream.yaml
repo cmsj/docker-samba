@@ -5,18 +5,24 @@ on:
     - cron:  '0 05 * * *'
 jobs:
   get-version:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.REPO_SCOPED_TOKEN }}
 
-      - name: Fetch release version
+      - name: Ensure package cache is up to date
         run: |
-          curl -s https://packages.ubuntu.com/jammy/amd64/samba/download | grep "More information on" | sed -e 's/.*<kbd>samba_//' -e 's/_amd64.*//' >upstream_latest_release.txt
+          apt-get update
+
+      - name: Capture dependency info
+        run: |
+          apt-get -qq -s satisfy xserver-xorg | grep ^Inst >upstream_latest_release.txt
+
       - name: Check for modified files
         id: git-check
         run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
         run: |
