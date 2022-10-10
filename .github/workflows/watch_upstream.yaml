@@ -17,7 +17,7 @@ jobs:
 
       - name: Capture dependency info
         run: |
-          apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst >upstream_latest_release.txt
+          sudo docker run --rm ubuntu:jammy bash -c "apt-get -qq update ; apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst" >upstream_latest_release.txt
 
       - name: Fetch FROM docker image
         run: |
