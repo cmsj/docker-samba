@@ -5,6 +5,7 @@ on:
     paths:
       - 'src/Dockerfile'
       - 'upstream_latest_release.txt'
+      - 'upstream_docker_version.txt'
 
 env:
   REGISTRY: ghcr.io
