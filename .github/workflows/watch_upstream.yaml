@@ -5,27 +5,24 @@ on:
     - cron:  '0 05 * * *'
 jobs:
   check-dependency-versions:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.REPO_SCOPED_TOKEN }}
 
-      - name: Extract container base image name/label
+      - name: Extract our target base image name/label
         id: base_image
         run: echo "::set-output name=label::$(grep FROM src/Dockerfile | awk '{ print $2 }')"
 
-      - name: Capture dependency info
-        run: |
-          sudo docker run --rm ${{ steps.base_image.outputs.label }}  bash -c "apt-get -qq update ; apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst" >upstream_latest_release.txt
+      - name: Ensure we have the latest version of our base image
+        run: sudo docker pull ${{ steps.base_image.outputs.label }}
 
-      - name: Fetch FROM docker image
-        run: |
-          sudo docker pull ${{ steps.base_image.outputs.label }}
+      - name: Capture base image hash
+        run: docker images ${{ steps.base_image.outputs.label }} >upstream_docker_version.txt
 
-      - name: Capture FROM docker image hash
-        run: |
-          docker images ${{ steps.base_image.outputs.label }} >upstream_docker_version.txt
+      - name: Capture package dependency versions
+        run: sudo docker run --rm ${{ steps.base_image.outputs.label }} bash -c "apt-get -qq update ; apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst" >upstream_latest_release.txt
 
       - name: Check for modified files
         id: git-check

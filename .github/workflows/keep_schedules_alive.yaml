@@ -11,9 +11,9 @@ jobs:
         with:
           token: ${{ secrets.REPO_SCOPED_TOKEN }}
 
-      - name: Dummy commit
+      - name: Dummy keepalive commit
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git commit --allow-empty -am "Dummy commit"
+          git commit --allow-empty -am "Dummy keepalive commit"
           git push
