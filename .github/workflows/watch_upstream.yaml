@@ -11,10 +11,6 @@ jobs:
         with:
           token: ${{ secrets.REPO_SCOPED_TOKEN }}
 
-      - name: Ensure package cache is up to date
-        run: |
-          sudo apt-get update
-
       - name: Capture dependency info
         run: |
           sudo docker run --rm ubuntu:jammy bash -c "apt-get -qq update ; apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst" >upstream_latest_release.txt
