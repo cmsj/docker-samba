@@ -48,7 +48,7 @@ Inst libxml2 (2.9.13+dfsg-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/ja
 Inst libarchive13 (3.6.0-1ubuntu1 Ubuntu:22.04/jammy [amd64])
 Inst libsmbclient (2:4.15.9+dfsg-0ubuntu0.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst smbclient (2:4.15.9+dfsg-0ubuntu0.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
-Inst openssl (3.0.2-0ubuntu1.6 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst openssl (3.0.2-0ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst ca-certificates (20211016 Ubuntu:22.04/jammy [all])
 Inst libapparmor1 (3.0.4-2ubuntu2.1 Ubuntu:22.04/jammy-updates [amd64])
 Inst dbus (1.12.20-2ubuntu4.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
