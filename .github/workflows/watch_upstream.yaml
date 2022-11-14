@@ -13,7 +13,7 @@ jobs:
 
       - name: Extract our target base image name/label
         id: base_image
-        run: echo "::set-output name=label::$(grep FROM src/Dockerfile | awk '{ print $2 }')"
+        run: echo "label=$(grep FROM src/Dockerfile | awk '{ print $2 }')" >> $GITHUB_OUTPUT
 
       - name: Ensure we have the latest version of our base image
         run: sudo docker pull ${{ steps.base_image.outputs.label }}
@@ -26,7 +26,7 @@ jobs:
 
       - name: Check for modified files
         id: git-check
-        run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+        run: echo "modified=$([ -z "$(git status --porcelain)" ] && echo "false" || echo "true")" >> $GITHUB_OUTPUT
 
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
