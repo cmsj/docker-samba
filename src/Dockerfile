@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:latest
 MAINTAINER Chris Jones <cmsj@tenshu.net>
 
 # Install Samba
