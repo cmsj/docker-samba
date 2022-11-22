@@ -36,11 +36,6 @@ jobs:
           username: ${{ github.repository_owner}}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract version number
-        id: version
-        run: |
-          echo "VERSION=$(cat upstream_latest_release.txt)" >> $GITHUB_OUTPUT
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
