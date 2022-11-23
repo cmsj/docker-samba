@@ -1,2 +1,2 @@
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
-ubuntu       jammy     a8780b506fa4   2 weeks ago   77.8MB
+ubuntu       latest    a8780b506fa4   2 weeks ago   77.8MB
