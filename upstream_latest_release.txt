@@ -1,5 +1,5 @@
 Inst libpython3.10-minimal (3.10.6-1~22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
-Inst libexpat1 (2.4.7-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libexpat1 (2.4.7-1ubuntu0.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst python3.10-minimal (3.10.6-1~22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst python3-minimal (3.10.6-1~22.04 Ubuntu:22.04/jammy-updates [amd64])
 Inst media-types (7.0.0 Ubuntu:22.04/jammy [all])
