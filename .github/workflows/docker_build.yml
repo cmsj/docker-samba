@@ -46,3 +46,9 @@ jobs:
           tags: |
             ghcr.io/cmsj/samba:latest
 
+      - name: Delete old images
+        uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'samba'
+          package-type: 'container'
+          min-versions-to-keep: 5
