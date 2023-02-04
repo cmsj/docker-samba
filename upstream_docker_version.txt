@@ -1,2 +1,2 @@
 REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
-ubuntu       latest    58db3edaf2be   8 days ago   77.8MB
+ubuntu       latest    58db3edaf2be   9 days ago   77.8MB
