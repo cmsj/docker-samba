@@ -50,7 +50,7 @@ Inst libsmbclient (2:4.15.13+dfsg-0ubuntu1 Ubuntu:22.04/jammy-updates, Ubuntu:22
 Inst smbclient (2:4.15.13+dfsg-0ubuntu1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst openssl (3.0.2-0ubuntu1.8 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst ca-certificates (20211016ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
-Inst libapparmor1 (3.0.4-2ubuntu2.1 Ubuntu:22.04/jammy-updates [amd64])
+Inst libapparmor1 (3.0.4-2ubuntu2.2 Ubuntu:22.04/jammy-updates [amd64])
 Inst dbus (1.12.20-2ubuntu4.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Inst libyaml-0-2 (0.2.2-1build2 Ubuntu:22.04/jammy [amd64])
 Inst logrotate (3.19.0-1ubuntu1.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
