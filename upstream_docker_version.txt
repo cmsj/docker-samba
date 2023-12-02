@@ -1,2 +1,2 @@
-REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
-ubuntu       latest    e4c58958181a   8 weeks ago   77.8MB
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+ubuntu       latest    b6548eacb063   21 hours ago   77.8MB
