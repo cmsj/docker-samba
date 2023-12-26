@@ -19,7 +19,7 @@ jobs:
         run: sudo docker pull ${{ steps.base_image.outputs.label }}
 
       - name: Capture base image hash
-        run: docker images --format '{{.Repository}} {{.Tag}} {{.Digest}}' ${{ steps.base_image.outputs.label }} >upstream_docker_version.txt
+        run: docker images --format '{{.Repository}} {{.Tag}} {{.ID}}' ${{ steps.base_image.outputs.label }} >upstream_docker_version.txt
 
       - name: Capture package dependency versions
         run: sudo docker run --rm ${{ steps.base_image.outputs.label }} bash -c "apt-get -qq update ; apt-get -qq -s satisfy samba samba-vfs-modules smbclient tini | grep ^Inst" >upstream_latest_release.txt
