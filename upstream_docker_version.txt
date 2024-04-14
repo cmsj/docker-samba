@@ -1,1 +1,1 @@
-ubuntu latest ca2b0f26964c
+ubuntu devel ca87e6c45a8a
