@@ -6,7 +6,7 @@ Inst libpython3.13-minimal (3.13.2-1 Ubuntu:25.04/plucky [amd64])
 Inst libexpat1 (2.6.4-1 Ubuntu:25.04/plucky [amd64])
 Inst python3.13-minimal (3.13.2-1 Ubuntu:25.04/plucky [amd64])
 Inst python3-minimal (3.13.2-1 Ubuntu:25.04/plucky [amd64])
-Inst media-types (12.0.0 Ubuntu:25.04/plucky [all])
+Inst media-types (13.0.0 Ubuntu:25.04/plucky [all])
 Inst netbase (6.4 Ubuntu:25.04/plucky [all])
 Inst tzdata (2025a-2ubuntu1 Ubuntu:25.04/plucky [all])
 Inst libncursesw6 [6.5-2] (6.5+20250216-1 Ubuntu:25.04/plucky [amd64]) []
