@@ -2,6 +2,7 @@ FROM ubuntu:devel
 MAINTAINER Chris Jones <cmsj@tenshu.net>
 
 # Install Samba
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y samba samba-vfs-modules smbclient tini ; apt-get clean
 
 # Make a place for share volume mounts to live
