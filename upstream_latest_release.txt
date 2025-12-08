@@ -46,7 +46,7 @@ Inst libtalloc2 (2:2.4.3+samba4.22.3+dfsg-4ubuntu3 Ubuntu:26.04/resolute [amd64]
 Inst libtdb1 (2:1.4.13+samba4.22.3+dfsg-4ubuntu3 Ubuntu:26.04/resolute [amd64])
 Inst libtevent0t64 (2:0.16.2+samba4.22.3+dfsg-4ubuntu3 Ubuntu:26.04/resolute [amd64])
 Inst libldb2 (2:2.11.0+samba4.22.3+dfsg-4ubuntu3 Ubuntu:26.04/resolute [amd64])
-Inst libpopt0 (1.19+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Inst libpopt0 (1.19+dfsg-2build1 Ubuntu:26.04/resolute [amd64])
 Inst libtirpc-common (1.3.6+ds-1 Ubuntu:26.04/resolute [all])
 Inst libtirpc3t64 (1.3.6+ds-1 Ubuntu:26.04/resolute [amd64])
 Inst libwbclient0 (2:4.22.3+dfsg-4ubuntu3 Ubuntu:26.04/resolute [amd64])
