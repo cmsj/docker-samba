@@ -5,7 +5,7 @@ Inst python3-minimal (3.13.7-1 Ubuntu:26.04/resolute [amd64])
 Inst media-types (14.0.0 Ubuntu:26.04/resolute [all])
 Inst netbase (6.5 Ubuntu:26.04/resolute [all])
 Inst tzdata (2025b-5ubuntu1 Ubuntu:26.04/resolute [all])
-Inst libffi8 (3.5.2-2 Ubuntu:26.04/resolute [amd64])
+Inst libffi8 (3.5.2-3 Ubuntu:26.04/resolute [amd64])
 Inst libncursesw6 [6.5+20250216-2build1] (6.5+20251123-1 Ubuntu:26.04/resolute [amd64]) []
 Inst libtinfo6 [6.5+20250216-2build1] (6.5+20251123-1 Ubuntu:26.04/resolute [amd64])
 Inst readline-common (8.3-3 Ubuntu:26.04/resolute [all])
