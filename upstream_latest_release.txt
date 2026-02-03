@@ -1,4 +1,4 @@
-Inst libexpat1 (2.7.3-1 Ubuntu:26.04/resolute [amd64])
+Inst libexpat1 (2.7.4-1 Ubuntu:26.04/resolute [amd64])
 Inst libtext-charwidth-perl (0.04-11build4 Ubuntu:26.04/resolute [amd64])
 Inst libtext-wrapi18n-perl (0.06-10 Ubuntu:26.04/resolute [all])
 Inst ucf (3.0052 Ubuntu:26.04/resolute [all])
