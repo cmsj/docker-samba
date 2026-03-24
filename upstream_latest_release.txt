@@ -1,3 +1,6 @@
+Inst libc-gconv-modules-extra [2.42-2ubuntu5] (2.43-2ubuntu1 Ubuntu:26.04/resolute [amd64]) [libc6:amd64 ]
+Inst libc6 [2.42-2ubuntu5] (2.43-2ubuntu1 Ubuntu:26.04/resolute [amd64]) [libc-bin:amd64 ]
+Inst libc-bin [2.42-2ubuntu5] (2.43-2ubuntu1 Ubuntu:26.04/resolute [amd64])
 Inst libexpat1 (2.7.4-1 Ubuntu:26.04/resolute [amd64])
 Inst libpython3.14-minimal (3.14.3-2 Ubuntu:26.04/resolute [amd64])
 Inst python3.14-minimal (3.14.3-2 Ubuntu:26.04/resolute [amd64])
@@ -61,8 +64,8 @@ Inst libboost-thread1.90.0 (1.90.0-5ubuntu2 Ubuntu:26.04/resolute [amd64])
 Inst libicu78 (78.2-2ubuntu1 Ubuntu:26.04/resolute [amd64])
 Inst libboost-locale1.90.0 (1.90.0-5ubuntu2 Ubuntu:26.04/resolute [amd64])
 Inst librdmacm1t64 (61.0-2ubuntu3 Ubuntu:26.04/resolute [amd64])
-Inst librados2 (20.2.0-0ubuntu1 Ubuntu:26.04/resolute [amd64])
-Inst libcephfs2 (20.2.0-0ubuntu1 Ubuntu:26.04/resolute [amd64])
+Inst librados2 (20.2.0-0ubuntu2 Ubuntu:26.04/resolute [amd64])
+Inst libcephfs2 (20.2.0-0ubuntu2 Ubuntu:26.04/resolute [amd64])
 Inst libcups2t64 (2.4.16-1ubuntu1 Ubuntu:26.04/resolute [amd64])
 Inst libldap-common (2.6.10+dfsg-1ubuntu5 Ubuntu:26.04/resolute [all])
 Inst libsasl2-modules-db (2.1.28+dfsg1-9ubuntu3 Ubuntu:26.04/resolute [amd64])
