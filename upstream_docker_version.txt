@@ -1,1 +1,1 @@
-ubuntu latest 5a0b35d45050
+ubuntu latest 6e92c4fd8dfd
