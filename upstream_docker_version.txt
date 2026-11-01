@@ -1,1 +1,1 @@
-ubuntu latest febc1a2eec1f
+ubuntu latest 6a06111c3b0a
